@@ -1,11 +1,9 @@
 $(document).ready(function() {
-$("#some-form").submit(function(event) {
+$("#form").submit(function(event) {
+    event.preventDefault();
     var nameInput = $("input#name").val();
-
-    $(".name").append(some-inputInput);
+    $(".name").append(nameInput);
 
     $("#letter").show();
-
-    event.preventDefault();
   });
 });
